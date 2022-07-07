@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactIcon } from "../Icons/icon";
 import { Text } from "../elements/index";
 
 // icons
