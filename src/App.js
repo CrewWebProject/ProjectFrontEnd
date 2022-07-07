@@ -14,6 +14,7 @@ import Header from "./components/Header";
 //페이지
 import Main from "./pages/Main";
 import Works from "./pages/Works";
+import Performance from "./pages/Performance";
 import NotFound from "./pages/Notfound";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/works" exact component={Works} />
+            <Route path="/performance" exact component={Performance} />
             <Route component={NotFound} />
           </Switch>
           <Footer />
