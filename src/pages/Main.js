@@ -6,7 +6,7 @@ import { ReactComponent as Arrow } from "../Icons/arrow/Arrow.svg";
 import { ReactComponent as ArrowDown } from "../Icons/arrow/arrow-down.svg";
 import { ReactComponent as Instagram } from "../Icons/SNS/instagram-w.svg";
 import { ReactComponent as Youtube } from "../Icons/SNS/youtube-w.svg";
-import CAY from "../Icons/2022-07-06 17-16-17.mp4";
+import CAY from "../Icons/sample/2022-07-06 17-16-17.mp4";
 
 import Performance from "../components/Performance";
 

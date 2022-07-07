@@ -213,7 +213,6 @@ const Body1 = styled.p`
   ${(props) => (props.color ? `color: ${props.color}` : "")};
   font-size: 16px;
   line-height: 24px;
-  padding: 16px 12px;
   background-color: ${(props) => props.bg};
   ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
   ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
