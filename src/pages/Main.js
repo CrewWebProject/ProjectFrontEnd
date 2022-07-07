@@ -2,9 +2,10 @@ import React from "react";
 
 import styled from "styled-components";
 import { Text } from "../elements/index";
-import { ReactIcon } from "../Icons/icon";
 import { ReactComponent as Arrow } from "../Icons/arrow/Arrow.svg";
 import { ReactComponent as ArrowDown } from "../Icons/arrow/arrow-down.svg";
+import { ReactComponent as Instagram } from "../Icons/SNS/instagram-w.svg";
+import { ReactComponent as Youtube } from "../Icons/SNS/youtube-w.svg";
 import CAY from "../Icons/2022-07-06 17-16-17.mp4";
 
 import Performance from "../components/Performance";
@@ -50,10 +51,9 @@ const Main = () => {
             window.open("https://www.instagram.com/caycrew1999/");
           }}
         >
-          <ReactIcon.BsInstagram
+          <Instagram
             style={{
               paddingRight: "19.04px",
-              color: "#fff",
             }}
           />
           <Text subTitle3 color="#fff">
@@ -68,10 +68,9 @@ const Main = () => {
             );
           }}
         >
-          <ReactIcon.BsYoutube
+          <Youtube
             style={{
               paddingRight: "19.04px",
-              color: "#fff",
             }}
           />
           <Text subTitle3 color="#fff">
@@ -132,7 +131,7 @@ const InfoBox = styled.div`
 
 const CayLink = styled.div`
   ${({ theme }) => theme.common.flexCenter};
-  width: 720px;
+  width: 100%;
   height: 126px;
   background-color: #000000;
   border: 1px solid #fff;
@@ -140,7 +139,7 @@ const CayLink = styled.div`
 `;
 
 const CayVideoWrapper = styled.div`
-  width: 1440px;
+  width: 100%;
   height: 1070px;
   background-color: #000000;
   margin: auto;
