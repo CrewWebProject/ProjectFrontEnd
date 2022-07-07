@@ -1,5 +1,5 @@
 import { ConnectedRouter } from "connected-react-router";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { history } from "./redux/configureStore";
 
 import { ThemeProvider } from "styled-components";
@@ -13,18 +13,22 @@ import Header from "./components/Header";
 
 //페이지
 import Main from "./pages/Main";
+import Works from "./pages/Works";
+import NotFound from "./pages/Notfound";
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <ConnectedRouter history={history}>
-          <switch>
-            <Header />
+          <Header />
+          <Switch>
             <Route path="/" exact component={Main} />
-            <Footer />
-            <Footer2 />
-          </switch>
+            <Route path="/works" exact component={Works} />
+            <Route component={NotFound} />
+          </Switch>
+          <Footer />
+          {/* <Footer2 /> */}
         </ConnectedRouter>
       </ThemeProvider>
     </div>

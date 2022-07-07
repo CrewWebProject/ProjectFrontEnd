@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import { ReactIcon } from "../Icons/icon";
+import { history } from "../redux/configureStore";
+import { Text } from "../elements/index";
+
+//icons
+import { ReactComponent as Cate } from "../Icons/SNS/cate.svg";
 
 const Header = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width:850px)",
+    query: "(max-width:1200px)",
   });
   if (isMobile) {
     return (
@@ -13,9 +17,7 @@ const Header = () => {
         <Container>
           <M_Logo>LOGO</M_Logo>
           <M_Menu>
-            <div>
-              <ReactIcon.FiMenu />
-            </div>
+            <Cate />
           </M_Menu>
         </Container>
       </Box>
@@ -24,15 +26,35 @@ const Header = () => {
   return (
     <Box>
       <Container>
-        <Logo>LOGO</Logo>
+        <Logo onClick={() => history.push("/")}>LOGO</Logo>
         <Menu>
-          <About>ABOUT US </About>
-          <Performance>PERFORMANCE</Performance>
-          <Works>WORKS</Works>
-          <Academy>ACADEMY</Academy>
-          <Contact>문의하기</Contact>
+          <div>
+            <Text header2 cursor="pointer">
+              ABOUT US
+            </Text>
+          </div>
+          <div>
+            <Text header2 cursor="pointer">
+              PERFORMANCE
+            </Text>
+          </div>
+          <div onClick={() => history.push("/works")}>
+            <Text header2 cursor="pointer">
+              WORKS
+            </Text>
+          </div>
+          <div>
+            <Text header2 cursor="pointer">
+              ACADEMY
+            </Text>
+          </div>
+          <div>
+            <Text header1 cursor="pointer">
+              문의하기
+            </Text>
+          </div>
           <Burger>
-            <ReactIcon.FiMenu />
+            <Cate />
           </Burger>
         </Menu>
       </Container>
@@ -54,13 +76,13 @@ const Container = styled.div`
   display: flex;
   max-width: 1440px;
   width: 100%;
-  height: 40px;
+  height: 80px;
   padding: 10px;
   background: rgba(249, 249, 249, 0.76);
 `;
 
 const Logo = styled.div`
-  margin-left: 50px;
+  margin-left: 100px;
   cursor: pointer;
 `;
 
@@ -69,44 +91,24 @@ const M_Logo = styled.div`
   cursor: pointer;
 `;
 
-const About = styled.div`
-  cursor: pointer;
-`;
-const Performance = styled.div`
-  cursor: pointer;
-`;
-const Works = styled.div`
-  cursor: pointer;
-`;
-const Academy = styled.div`
-  cursor: pointer;
-`;
-const Contact = styled.div`
-  cursor: pointer;
-`;
-
 const Menu = styled.div`
   display: flex;
-  justify-content: space-around;
-  line-height: 40px;
-  width: 50%;
-  margin-right: 40px;
+  gap: 32.2px;
+  width: max-content;
+  margin-right: 100px;
 `;
 
 const M_Menu = styled.div`
   display: flex;
   justify-content: space-around;
   width: max-content;
-  height: 40px;
-  line-height: 40px;
-  font-size: 30px;
   margin-right: 40px;
   cursor: pointer;
 `;
 
 const Burger = styled.div`
-  line-height: 40px;
+  /* line-height: 40px;
   font-size: 24px;
-  text-align: center;
+  text-align: center; */
   cursor: pointer;
 `;

@@ -42,6 +42,11 @@ const common = {
     justify-content: center;
     align-items: center;
   `,
+  flexAround: `
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  `,
   flexCenterColumn: `
     display: flex;
     flex-direction: column;

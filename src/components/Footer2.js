@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactIcon } from "../Icons/icon";
+import { Text } from "../elements/index";
+
+// icons
+import { ReactComponent as Blog_w } from "../Icons/SNS/blog-w.svg";
+import { ReactComponent as Facebook_w } from "../Icons/SNS/Facebook-w.svg";
+import { ReactComponent as Insta_w } from "../Icons/SNS/instagram-w.svg";
+import { ReactComponent as Youtube_w } from "../Icons/SNS/youtube-w.svg";
 
 const Footer = () => {
   return (
@@ -9,17 +16,21 @@ const Footer = () => {
         <Top>
           <div>LOGO</div>
           <Icons>
-            <ReactIcon.BsInstagram /> <ReactIcon.BsYoutube /> 블
-            <ReactIcon.BsFacebook />
+            <Insta_w /> <Youtube_w /> <Blog_w />
+            <Facebook_w />
           </Icons>
         </Top>
         <Bottom>
-          <div>카이크루 ㅣ 대표 : 소재환 ㅣ 대표전화 : 052-246-8359</div>
-          <div>
+          <Text sub1 color="#cccccc" textAlign="left">
+            카이크루 ㅣ 대표 : 소재환 ㅣ 대표전화 : 052-246-8359
+          </Text>
+          <Text sub1 color="#cccccc" textAlign="left">
             주소 : 울산광역시 중구 중앙길 91 서린빌딩 3층 ㅣ
             caycrewbboy@naver.com
-          </div>
-          <div>Copyright by CAYCREW.all rights reserved.</div>
+          </Text>
+          <Text sub1 color="#cccccc" textAlign="left">
+            Copyright by CAYCREW.all rights reserved.
+          </Text>
         </Bottom>
       </Container>
     </Box>
@@ -56,13 +67,9 @@ const Top = styled.div`
 const Icons = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 120px;
-  font-size: 20px;
+  width: 180px;
 `;
 
 const Bottom = styled.div`
-  color: #cccccc;
-  font-size: 12px;
-  line-height: 24px;
   padding: 50px;
 `;
