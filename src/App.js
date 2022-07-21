@@ -15,6 +15,7 @@ import Header from "./components/Header";
 import Main from "./pages/Main";
 import Works from "./pages/Works";
 import NotFound from "./pages/Notfound";
+import WorkDetail from "./components/WorkDetail";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/works" exact component={Works} />
+            <Route path="/workdetail" exact component={WorkDetail} />
             <Route component={NotFound} />
           </Switch>
           <Footer />

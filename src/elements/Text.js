@@ -28,6 +28,7 @@ const Text = (props) => {
     textAlign,
     lineHeight,
     bg,
+    width,
   } = props;
 
   const styles = {
@@ -38,6 +39,7 @@ const Text = (props) => {
     textAlign: textAlign,
     lineHeight: lineHeight,
     bg: bg,
+    width: width,
   };
 
   if (title1) {
@@ -230,6 +232,7 @@ const Body2 = styled.p`
   ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
   ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
   ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.width ? `width: ${props.width};` : "")};
 `;
 
 const Sub1 = styled.p`
