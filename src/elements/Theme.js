@@ -53,6 +53,12 @@ const common = {
     justify-content: center;
     align-items: center;
   `,
+  flexColumnAround: `
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  `,
 };
 
 // theme 객체에 감싸서 반환한다.

@@ -12,6 +12,7 @@ const WorkCards = () => {
           </Text>
         </CardBtn>
       </Card>
+
       <CardText>
         <Text body1 textAlign="left">
           2022 울산시립미술관 '어느정도 예술공동체 :
@@ -33,6 +34,7 @@ const Container = styled.div`
 const Card = styled.div`
   display: flex;
   justify-content: flex-end;
+
   width: 295px;
   height: 295px;
   background-color: #a6d8b4;
