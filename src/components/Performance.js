@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
-import { Text } from "../elements/index";
+import styled from 'styled-components';
+import { Text } from '../elements/index';
 
 const Performance = () => {
   return (
@@ -111,7 +111,9 @@ const PerformanceWrapper = styled.div`
   margin-top: 280px;
 `;
 const PerformanceBox = styled.div`
-  ${({ theme }) => theme.common.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 120px;
 `;
 const Photo = styled.div`

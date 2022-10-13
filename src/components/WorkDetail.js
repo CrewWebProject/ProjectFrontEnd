@@ -1,7 +1,7 @@
-import React from "react";
-import { Modal, Text } from "../elements/index";
-import styled from "styled-components";
-import Swiper from "./Swiper";
+import React from 'react';
+import { Modal, Text } from '../elements/index';
+import styled from 'styled-components';
+import Swiper from './Swiper';
 
 const WorkDetail = () => {
   return (
@@ -37,9 +37,7 @@ const WorkDetail = () => {
                 <Text body2 width="63px" textAlign="left">
                   협력
                 </Text>
-                <div>
-                  SO엔터테인먼트, 카이댄스컴퍼니, 레디투샷, 울산브레이킹협회
-                </div>
+                <div>SO엔터테인먼트, 카이댄스컴퍼니, 레디투샷, 울산브레이킹협회</div>
               </Section2>
               <Section2>
                 <Text body2 width="63px" textAlign="left">
@@ -72,22 +70,16 @@ const WorkDetail = () => {
         <Section3>
           <h3>온라인 문화예술 활동지원 "비보이문화학교"</h3>
           <div>
-            2024년 프랑스 파리 올림픽 정식종목으로 채택된 "브레이킹" 울산광역시
-            홍보대사 "카이크루"와 함께 "브레이킹"의 역사와 유래에 대하여
-            알아보고, 동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자
-            합니다. 리 올림픽 정식종목으로 채택된 "브레이킹" 울산광역시 홍보대사
-            "카이크루"와 함께 "브레이킹"의 역사와 유래에 대하여 알아보고,
+            2024년 프랑스 파리 올림픽 정식종목으로 채택된 "브레이킹" 울산광역시 홍보대사 "카이크루"와 함께 "브레이킹"의
+            역사와 유래에 대하여 알아보고, 동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다. 리 올림픽
+            정식종목으로 채택된 "브레이킹" 울산광역시 홍보대사 "카이크루"와 함께 "브레이킹"의 역사와 유래에 대하여
+            알아보고, 동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다. 프랑스 파리울산광역시 홍보대사
+            "카이크루"와 알아보고, 동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다. 함께 "브레이킹"의
+            역사와 유래에 대하여 알아보고, 동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다. 울산광역시
+            홍보대사 "카이크루"와 함께 "브레이킹"의 역사와 유래에 대하여 알아보고, 동작들을 배워 시민들에게
+            문화예술활동의 향유를 제공하고자 합니다.프랑스 파리울산광역시 홍보대사 "카이크루"와 알아보고, 동작들을 배워
+            시민들에게 문화예술활동의 향유를 제공하고자 합니다. 함께 "브레이킹"의 역사와 유래에 대하여 알아보고,
             동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다.
-            프랑스 파리울산광역시 홍보대사 "카이크루"와 알아보고, 동작들을 배워
-            시민들에게 문화예술활동의 향유를 제공하고자 합니다. 함께
-            "브레이킹"의 역사와 유래에 대하여 알아보고, 동작들을 배워 시민들에게
-            문화예술활동의 향유를 제공하고자 합니다. 울산광역시 홍보대사
-            "카이크루"와 함께 "브레이킹"의 역사와 유래에 대하여 알아보고,
-            동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자
-            합니다.프랑스 파리울산광역시 홍보대사 "카이크루"와 알아보고,
-            동작들을 배워 시민들에게 문화예술활동의 향유를 제공하고자 합니다.
-            함께 "브레이킹"의 역사와 유래에 대하여 알아보고, 동작들을 배워
-            시민들에게 문화예술활동의 향유를 제공하고자 합니다.
           </div>
         </Section3>
         <IconDIv>
@@ -106,7 +98,10 @@ const WorkDetail = () => {
 export default WorkDetail;
 
 const Contain = styled.div`
-  ${({ theme }) => theme.common.flexCenterColumn};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* width: 86.1111vw;
   height: 76.9444vw; */
   max-width: 1180px;

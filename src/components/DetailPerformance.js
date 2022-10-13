@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
-import { Text } from "../elements/index";
+import styled from 'styled-components';
+import { Text } from '../elements/index';
 //arrow-short 90도로 회전해야댐 현재는 오른쪽 방향을 가리킴 따라서 arrow-down으로 임시적 사용
-import { ReactComponent as Arrow } from "../Icons/arrow/arrow-down.svg";
+import { ReactComponent as Arrow } from '../Icons/arrow/arrow-down.svg';
 
 const DetailPerformance = ({ close }) => {
   return (
@@ -18,7 +18,7 @@ const DetailPerformance = ({ close }) => {
               오리지널 비보이 쇼케이스
             </Text>
           </div>
-          <Arrow style={{ cursor: "pointer" }} onClick={close} />
+          <Arrow style={{ cursor: 'pointer' }} onClick={close} />
         </Title>
       </Wrapper>
 
@@ -48,9 +48,7 @@ const DetailPerformance = ({ close }) => {
             </div>
             <div>
               <Text body1>수많은 세계대회를 우승한 비보이들이 선보이는</Text>
-              <Text body1>
-                다이내믹하고 역동적인 동작들과 화려한 칼군무 공연
-              </Text>
+              <Text body1>다이내믹하고 역동적인 동작들과 화려한 칼군무 공연</Text>
             </div>
             <Btn>
               <Text body2 color="#fff" cursor="pointer">
@@ -106,13 +104,18 @@ const CayVideo = styled.div`
 `;
 
 const CayContent = styled.div`
-  ${({ theme }) => theme.common.flexColumnAround};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 400px;
   height: 480px;
 `;
 
 const MixedText = styled.div`
-  ${({ theme }) => theme.common.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Btn = styled.div`

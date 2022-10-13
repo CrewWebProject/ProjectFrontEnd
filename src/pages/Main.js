@@ -1,36 +1,28 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
-import { Text } from "../elements/index";
-import { ReactComponent as Arrow } from "../Icons/arrow/Arrow.svg";
-import { ReactComponent as ArrowDown } from "../Icons/arrow/arrow-down.svg";
-import { ReactComponent as Instagram } from "../Icons/SNS/instagram-w.svg";
-import { ReactComponent as Youtube } from "../Icons/SNS/youtube-w.svg";
-import CAY from "../Icons/sample/2022-07-06 17-16-17.mp4";
+import styled from 'styled-components';
+import { Text } from '../elements/index';
+import { ReactComponent as Arrow } from '../Icons/arrow/Arrow.svg';
+import { ReactComponent as ArrowDown } from '../Icons/arrow/arrow-down.svg';
+import { ReactComponent as Instagram } from '../Icons/SNS/instagram-w.svg';
+import { ReactComponent as Youtube } from '../Icons/SNS/youtube-w.svg';
+import CAY from '../Icons/sample/2022-07-06 17-16-17.mp4';
 
-import Performance from "../components/Performance";
+import Performance from '../components/Performance';
 
 const Main = () => {
   return (
     <>
       {/* 동영상 삽입 부분 */}
       <VideoBox>
-        <video
-          src={CAY}
-          type="video/mp4"
-          preload="auto"
-          autoPlay
-          loop
-          muted
-          controls
-        />
+        <video src={CAY} type="video/mp4" preload="auto" autoPlay loop muted controls />
         <VideoContainer>
           <Text headline color="#fff" textAlign="left">
             CAY
           </Text>
           <Text headline color="#fff" textAlign="left">
             CREW ?
-            <Arrow style={{ paddingLeft: "50px", cursor: "pointer" }} />
+            <Arrow style={{ paddingLeft: '50px', cursor: 'pointer' }} />
           </Text>
           <ArrowBox>
             <Text body3 color="#fff" textAlign="left">
@@ -48,35 +40,33 @@ const Main = () => {
       <InfoBox>
         <CayLink
           onClick={() => {
-            window.open("https://www.instagram.com/caycrew1999/");
+            window.open('https://www.instagram.com/caycrew1999/');
           }}
         >
           <Instagram
             style={{
-              paddingRight: "19.04px",
+              paddingRight: '19.04px',
             }}
           />
           <Text subTitle3 color="#fff">
             caycrew1999
           </Text>
-          <Arrow style={{ paddingLeft: "20px" }} />
+          <Arrow style={{ paddingLeft: '20px' }} />
         </CayLink>
         <CayLink
           onClick={() => {
-            window.open(
-              "https://www.youtube.com/c/%EC%B9%B4%EC%9D%B4%ED%81%AC%EB%A3%A8CAYCREWTV"
-            );
+            window.open('https://www.youtube.com/c/%EC%B9%B4%EC%9D%B4%ED%81%AC%EB%A3%A8CAYCREWTV');
           }}
         >
           <Youtube
             style={{
-              paddingRight: "19.04px",
+              paddingRight: '19.04px',
             }}
           />
           <Text subTitle3 color="#fff">
             caycrew TV
           </Text>
-          <Arrow style={{ paddingLeft: "20px" }} />
+          <Arrow style={{ paddingLeft: '20px' }} />
         </CayLink>
       </InfoBox>
 
@@ -107,7 +97,10 @@ const Main = () => {
 };
 
 const VideoBox = styled.div`
-  ${({ theme }) => theme.common.flexCenterColumn};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1440px;
   height: 900px;
   margin: auto;
@@ -125,12 +118,16 @@ const ArrowBox = styled.div`
 `;
 
 const InfoBox = styled.div`
-  ${({ theme }) => theme.common.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 171px;
 `;
 
 const CayLink = styled.div`
-  ${({ theme }) => theme.common.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 126px;
   background-color: #000000;
@@ -146,7 +143,9 @@ const CayVideoWrapper = styled.div`
 `;
 
 const CayVideoContainer = styled.div`
-  ${({ theme }) => theme.common.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1240px;
   height: 540px;
   margin: auto;

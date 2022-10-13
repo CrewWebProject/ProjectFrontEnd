@@ -1,7 +1,7 @@
-import React from "react";
-import { Text } from "../elements/index";
-import styled from "styled-components";
-import WorkCards from "../components/WorkCards";
+import React from 'react';
+import { Text } from '../elements/index';
+import styled from 'styled-components';
+import WorkCards from '../components/WorkCards';
 
 const Works = () => {
   return (
@@ -47,7 +47,10 @@ const Works = () => {
 export default Works;
 
 const Wrapper = styled.div`
-  ${({ theme }) => theme.common.flexCenterColumn};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Container = styled.div`
