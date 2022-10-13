@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
-import { history } from "../redux/configureStore";
 import { Text } from "../elements/index";
 
 //icons
 import { ReactComponent as Cate } from "../Icons/SNS/cate.svg";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
   const isMobile = useMediaQuery({
     query: "(max-width:1200px)",
   });
@@ -26,7 +27,7 @@ const Header = () => {
   return (
     <Box>
       <Container>
-        <Logo onClick={() => history.push("/")}>LOGO</Logo>
+        <Logo onClick={() => navigate("/")}>LOGO</Logo>
         <Menu>
           <div>
             <Text header2 cursor="pointer">
@@ -38,7 +39,7 @@ const Header = () => {
               PERFORMANCE
             </Text>
           </div>
-          <div onClick={() => history.push("/works")}>
+          <div onClick={() => navigate("/works")}>
             <Text header2 cursor="pointer">
               WORKS
             </Text>
