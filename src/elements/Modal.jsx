@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { CgClose } from "react-icons/cg";
 
-import { history } from "../redux/configureStore";
-
 const Modal = (props) => {
   const { closeModal, children } = props;
   // 모달 오버레이에서 스크롤 방지

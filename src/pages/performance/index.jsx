@@ -1,11 +1,11 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Text } from "../elements/index";
+import { Text } from "../../elements/index";
 //arrow-short 90도로 회전해야댐 현재는 오른쪽 방향을 가리킴 따라서 arrow-down으로 임시적 사용
-import { ReactComponent as Arrow } from "../Icons/arrow/arrow-down.svg";
+import { ReactComponent as Arrow } from "../../Icons/arrow/arrow-down.svg";
 
-import DetailPerformance from "../components/DetailPerformance";
+import DetailPerformance from "../../components/DetailPerformance";
 
 const Performance = () => {
   const [open1, setOpen1] = React.useState(false);

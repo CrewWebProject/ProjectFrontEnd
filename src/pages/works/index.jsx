@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text } from '../elements/index';
+import { Text } from '../../elements/index';
 import styled from 'styled-components';
-import WorkCards from '../components/WorkCards';
+import WorkCards from './atoms/WorkCards';
 
 const Works = () => {
   return (

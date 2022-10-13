@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text } from "../elements/index";
+import { Text } from "../../../elements/index";
 
 const WorkCards = () => {
   return (
