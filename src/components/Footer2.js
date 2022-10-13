@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { ReactIcon } from "../Icons/icon";
-import { Text } from "../elements/index";
+import React from 'react';
+import styled from 'styled-components';
+// import { ReactIcon } from "../Icons/icon";
+import { Text } from '../elements/index';
 
 // icons
-import { ReactComponent as Blog_w } from "../Icons/SNS/blog-w.svg";
-import { ReactComponent as Facebook_w } from "../Icons/SNS/Facebook-w.svg";
-import { ReactComponent as Insta_w } from "../Icons/SNS/instagram-w.svg";
-import { ReactComponent as Youtube_w } from "../Icons/SNS/youtube-w.svg";
+import { ReactComponent as Blog_w } from '../Icons/SNS/blog-w.svg';
+import { ReactComponent as Facebook_w } from '../Icons/SNS/Facebook-w.svg';
+import { ReactComponent as Insta_w } from '../Icons/SNS/instagram-w.svg';
+import { ReactComponent as Youtube_w } from '../Icons/SNS/youtube-w.svg';
 
 const Footer = () => {
   return (
@@ -25,8 +25,7 @@ const Footer = () => {
             카이크루 ㅣ 대표 : 소재환 ㅣ 대표전화 : 052-246-8359
           </Text>
           <Text sub1 color="#cccccc" textAlign="left">
-            주소 : 울산광역시 중구 중앙길 91 서린빌딩 3층 ㅣ
-            caycrewbboy@naver.com
+            주소 : 울산광역시 중구 중앙길 91 서린빌딩 3층 ㅣ caycrewbboy@naver.com
           </Text>
           <Text sub1 color="#cccccc" textAlign="left">
             Copyright by CAYCREW.all rights reserved.

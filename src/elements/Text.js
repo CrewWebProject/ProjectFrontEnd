@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Text = (props) => {
   const {
@@ -152,194 +152,194 @@ const Text = (props) => {
 Text.defaultProps = {
   _onClick: () => {},
   children: null,
-  margin: "0px",
-  color: "#000000",
-  size: "18px",
-  cursor: "default",
-  textAlign: "center",
-  lineHeight: "24px",
-  bg: "",
+  margin: '0px',
+  color: '#000000',
+  size: '18px',
+  cursor: 'default',
+  textAlign: 'center',
+  lineHeight: '24px',
+  bg: '',
 };
 
 const Title1 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 36px;
   line-height: 42px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle1 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 24px;
   line-height: 34px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle2 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.medium};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 500;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 24px;
   line-height: 34px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Header1 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.medium};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 500;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 16px;
   line-height: 28px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Body1 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.regular};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 400;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 16px;
   line-height: 24px;
   padding: 16px 12px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Body2 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 14px;
   line-height: 20px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
-  ${(props) => (props.width ? `width: ${props.width};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
+  ${(props) => (props.width ? `width: ${props.width};` : '')};
 `;
 
 const Sub1 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.kr};
-  font-weight: ${({ theme }) => theme.font.weight.regular};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Pretendard';
+  font-weight: 400;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 12px;
   line-height: 24px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Headline = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 76px;
   line-height: 100px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Title2 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 40px;
   line-height: 52px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle3 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 24px;
   line-height: 34px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle4 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.medium};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 500;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 24px;
   line-height: 34px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle5 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 20px;
   line-height: 30px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const SubTitle6 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.bold};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 700;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 16px;
   line-height: 28px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Header2 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.medium};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 500;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 14px;
   line-height: 28px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Body3 = styled.p`
-  font-family: ${({ theme }) => theme.font.family.en};
-  font-weight: ${({ theme }) => theme.font.weight.medium};
-  ${(props) => (props.color ? `color: ${props.color}` : "")};
+  font-family: 'Gmarket Sans TTF';
+  font-weight: 500;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
   font-size: 14px;
   line-height: 20px;
   background-color: ${(props) => props.bg};
-  ${(props) => (props.margin ? `margin: ${props.margin};` : "")};
-  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : "")};
-  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : "")};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 export default Text;
