@@ -12,6 +12,8 @@ const Header = () => {
   const isMobile = useMediaQuery({
     query: "(max-width:1200px)",
   });
+  if (window.location.pathname === '/admin') return null;
+
   if (isMobile) {
     return (
       <Box>
