@@ -13,6 +13,7 @@ const Header = () => {
     query: "(max-width:1200px)",
   });
   if (window.location.pathname === '/admin') return null;
+  if (window.location.pathname === '/adminLogin') return null;
 
   if (isMobile) {
     return (

@@ -8,6 +8,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Academy from '../pages/academy'
 import Admin from '../pages/admin'
+import AdminLogin from '../pages/adminLogin'
 
 const BaseLayout = () => {
   return (
@@ -19,6 +20,7 @@ const BaseLayout = () => {
         <Route path="/performance" element={<Performance />} />
         <Route path="/academy" element={<Academy />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/adminLogin" element={<AdminLogin />} />
         <Route path="*" exact element={<NotFound />} />
       </Routes>
       <Footer />

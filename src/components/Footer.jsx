@@ -8,7 +8,12 @@ import { ReactComponent as Facebook_b } from "../Icons/SNS/Facebook-b.svg";
 import { ReactComponent as Insta_b } from "../Icons/SNS/instagram-b.svg";
 import { ReactComponent as Youtube_b } from "../Icons/SNS/youtube-b.svg";
 
+
+
 const Footer = () => {
+
+  if (window.location.pathname === '/adminLogin') return null;
+
   return (
     <Box>
       <Container>

@@ -18,6 +18,7 @@ const Text = (props) => {
     subTitle6,
     header2,
     body3,
+    body4,
     _onClick,
     _style,
     children,
@@ -145,7 +146,14 @@ const Text = (props) => {
       <Body3 style={_style} onClick={_onClick} {...styles}>
         {children}
       </Body3>
-    );
+    );  
+  }
+   if (body4) {
+    return (
+      <Body4 style={_style} onClick={_onClick} {...styles}>
+        {children}
+      </Body4>
+    );  
   }
 };
 
@@ -233,6 +241,18 @@ const Body2 = styled.p`
   ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
   ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
   ${(props) => (props.width ? `width: ${props.width};` : '')};
+`;
+const Body4 = styled.p`
+  font-family: 'Pretendard';
+  font-weight: 400;
+  ${(props) => (props.color ? `color: ${props.color}` : '')};
+  font-size: 14;
+  line-height: 20px;
+  padding: 16px 12px;
+  background-color: ${(props) => props.bg};
+  ${(props) => (props.margin ? `margin: ${props.margin};` : '')};
+  ${(props) => (props.cursor ? `cursor: ${props.cursor};` : '')};
+  ${(props) => (props.textAlign ? `text-align: ${props.textAlign};` : '')};
 `;
 
 const Sub1 = styled.p`
