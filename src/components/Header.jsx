@@ -5,15 +5,16 @@ import { Text } from "../elements/index";
 
 //icons
 import { ReactComponent as Cate } from "../Icons/SNS/cate.svg";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
   const isMobile = useMediaQuery({
     query: "(max-width:1200px)",
   });
-  if (window.location.pathname === '/admin') return null;
-  if (window.location.pathname === '/adminLogin') return null;
+
+  if (window.location.pathname === "/admin") return null;
+  if (window.location.pathname === "/adminLogin") return null;
 
   if (isMobile) {
     return (
@@ -32,12 +33,12 @@ const Header = () => {
       <Container>
         <Logo onClick={() => navigate("/")}>LOGO</Logo>
         <Menu>
-          <div>
+          <div onClick={() => navigate("/about")}>
             <Text header2 cursor="pointer">
               ABOUT US
             </Text>
           </div>
-          <div>
+          <div onClick={() => navigate("/performance")}>
             <Text header2 cursor="pointer">
               PERFORMANCE
             </Text>
@@ -47,7 +48,7 @@ const Header = () => {
               WORKS
             </Text>
           </div>
-          <div>
+          <div onClick={() => navigate("/academy")}>
             <Text header2 cursor="pointer">
               ACADEMY
             </Text>
