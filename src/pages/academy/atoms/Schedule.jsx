@@ -8,27 +8,31 @@ const Schedule = () => {
     <Wrap>
       <h1>JULY SCHEDULE</h1>
       <Contents>
-        <Time>
-          <h2>MON</h2>
-          <TimeBox>
-            <TimeContents>
-              <hr />
-              <span>18:00 - 19:00</span>
-            </TimeContents>
-            <TimeContents>
-              <hr />
-              <span>19:00 - 20:00</span>
-            </TimeContents>
-            <TimeContents>
-              <hr />
-              <span>20:00 - 21:00</span>
-            </TimeContents>
-            <TimeContents>
-              <hr />
-              <span>21:00 - 22:00</span>
-            </TimeContents>
-          </TimeBox>
-        </Time>
+        <DayBox>
+          <h2 style={{ color: '#000000' }}>Time</h2>
+          <Day>
+            <DayContents>
+              <div>
+                <span>18:00 - 19:00</span>
+              </div>
+            </DayContents>
+            <DayContents>
+              <div>
+                <span>19:00 - 20:00</span>
+              </div>
+            </DayContents>
+            <DayContents>
+              <div>
+                <span>20:00 - 21:00</span>
+              </div>
+            </DayContents>
+            <DayContents>
+              <div>
+                <span>21:00 - 22:00</span>
+              </div>
+            </DayContents>
+          </Day>
+        </DayBox>
         <DayBox>
           <h2>MON</h2>
           <Day>
@@ -295,33 +299,8 @@ const Contents = styled.div`
   justify-content: space-between;
 `;
 
-const Time = styled.div`
-  width: 160px;
-`;
-
-const TimeBox = styled.div`
-  width: 100%;
-  min-height: 540px;
-  display: flex;
-  flex-direction: column;
-`;
-
-const TimeContents = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 130px;
-
-  hr {
-    display: block;
-    width: 40%;
-    color: white;
-    margin: 0px 130px 22px 0px;
-  }
-`;
-
 const DayBox = styled.div`
-  width: 156px;
-  margin-left: 20px;
+  width: 16.7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,8 +310,6 @@ const DayBox = styled.div`
 const Day = styled.div`
   width: 100%;
   min-height: 540px;
-  padding: 10px 0px;
-  border: 2px solid #333333;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,8 +317,13 @@ const Day = styled.div`
 `;
 
 const DayContents = styled.div`
-  width: 80%;
-  min-height: 130px;
+  width: 100%;
+  min-height: 136px;
+  border-top: 1px solid white;
+
+  div {
+    margin-top: 15px;
+  }
 
   span {
     margin-left: 10px;
@@ -358,7 +340,6 @@ const DayContents = styled.div`
 const Footer = styled.div`
   width: 80%;
   height: 100px;
-  margin-top: 24px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
